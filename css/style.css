@@ -1,4 +1,21 @@
 /* CUSTOM PROPS */
+:root {
+    --martinique: #353044;
+    --mobster: #5e5371;
+    --fog: #dbd8e3;
+}
+
+
+/* FONTS */
+@font-face {
+    font-family: 'Love Ya Like A Sister';
+    src: url('LoveYaLikeASister-Regular.woff2') format('woff2'),
+        url('LoveYaLikeASister-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 /* GLOBAL */
 html {
@@ -22,10 +39,10 @@ body {
     margin: 0;
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Roboto","Arial",sans-serif;
+    font-family: "Love Ya Like A Sister","Arial",sans-serif;
     flex-direction: column;
-    background-color: #fff;
-    color: #222;
+    background-color: var(--fog);
+    color: var(--martinique);
 }
 
 img {
@@ -40,10 +57,74 @@ main {
 
 /* CONTAINER */
 .container {
-    max-width: 1200px;
+    max-width: 1370px;
     width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* SITE HEADER */
+.header {
+    background-color: var(--mobster);
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 173px;
+    height: 38px;
+}
+
+.header__logo:active {
+    opacity: 0.8;
+}
+
+.logo__img {
+    width: 173px;
+    height: 38px;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header__nav-item {
+    width: 45px;
+    height: 45px;
+    background-color: var(--fog);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__nav-item:hover .header__nav-link {
+    color: var(--mobster);
+}
+
+.header__nav-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header__nav-item:active {
+    opacity: 0.8;
+}
+
+.header__nav-link {
+    color: var(--martinique);
+    transition: color 0.2s ease;
+}
+
+.header__nav-link svg {
+    display: block;
 }
