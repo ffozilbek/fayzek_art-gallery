@@ -67,9 +67,12 @@ main {
 
 /* SITE HEADER */
 .header {
+    width: 100%;
     background-color: var(--mobster);
     padding-top: 31px;
     padding-bottom: 31px;
+    position: fixed;
+    z-index: 99;
 }
 
 .header__container {
@@ -131,7 +134,7 @@ main {
 
 /* SITE MAIN */
 .main {
-    padding-top: 40px;
+    padding-top: 140px;
     padding-bottom: 40px;
 }
 
@@ -184,10 +187,6 @@ main {
     opacity: 1;
 }
 
-.gallery__item:hover .gallery__img-downloader {
-    opacity: 1;
-}
-
 .gallery__img {
     height: auto;
     object-fit: cover;
@@ -211,7 +210,11 @@ main {
     align-items: center;
     justify-content: center;
     text-decoration: underline;
-    opacity: 0;
+    display: none;
+}
+
+.gallery__img-downloader.active {
+    display: flex;
 }
 
 .gallery__img-icon svg {
@@ -233,5 +236,16 @@ main {
 
     .gallery {
         columns: 2;
+    }
+
+    .header{
+        order: 1;
+        bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .main {
+        padding-top: 40px;
     }
 }
