@@ -1,6 +1,12 @@
 window.addEventListener("DOMContentLoaded", ()=> {
     const elHeader = document.querySelector(".header"),
-        elHeaderLink = document.querySelector(".header__link");
+        elLoader = document.querySelector(".loader");
+
+    setTimeout(() => {
+      elLoader.classList.remove("active");
+    }, 5000);
+
+    elLoader.classList.add("active");
 
     window.addEventListener("scroll", ()=> {
         if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
