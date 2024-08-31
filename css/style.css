@@ -256,10 +256,6 @@ main {
     align-items: center;
     justify-content: center;
     transition: opacity 0.3s ease;
-    display: none;
-}
-
-.loader.active {
     display: flex;
 }
 
