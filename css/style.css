@@ -16,6 +16,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-Medium.woff2') format('woff2'),
+        url('/fonts/Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 /* GLOBAL */
 html {
@@ -86,13 +95,13 @@ main {
 }
 
 .header__link {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: var(--alabaster);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 50%;
     transition: background-color 0.1s ease;
     margin-left: auto;
     margin-right: auto;
@@ -151,6 +160,9 @@ main {
     display: inline-block;
     letter-spacing: 1px;
     transition: background-color 0.1s ease;
+    text-decoration: none;
+    font-family: 'Ubuntu';
+    letter-spacing: normal;
 }
 
 .hero__btn-link:hover {
@@ -163,7 +175,6 @@ main {
 }
 
 .album {
-    padding-top: 40px;
     padding-bottom: 80px;
     position: relative;
 }
@@ -182,17 +193,6 @@ main {
     position: relative;
 }
 
-.album__heading::after {
-    content: "";
-    width: 200px;
-    height: 2px;
-    background-color: var(--dark-jungle-green);
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-}
-
 .album__images {
     columns: 2;
     column-gap: 5px;
@@ -202,17 +202,15 @@ main {
 
 .album__item {
     position: relative;
-    border-radius: 10px;
     break-inside: avoid;
     margin-bottom: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
     cursor: zoom-in;
 }
 
 .album__item:hover .album__img {
     transform: scale(1.1);
-
 }
 
 .album__downloader {
@@ -227,6 +225,9 @@ main {
     color: var(--alabaster);
     z-index: 97;
     transition: background 0.2s ease;
+    font-family: 'Ubuntu';
+    letter-spacing: normal;
+    text-decoration: none;
 }
 
 .album__downloader:hover {
@@ -272,6 +273,10 @@ main {
         padding-left: 10px;
         padding-right: 10px;
         column-gap: 10px
+    }
+
+    .album__downloader {
+        font-size: 1.2rem;
     }
 }
 
