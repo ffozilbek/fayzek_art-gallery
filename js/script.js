@@ -2,9 +2,11 @@ window.addEventListener("DOMContentLoaded", ()=> {
     const elHeader = document.querySelector(".header"),
         elLoader = document.querySelector(".loader");
 
-    setTimeout(() => {
-      elLoader.classList.remove("active");
-    }, 5000);
+    window.addEventListener("load", ()=> {
+      setTimeout(() => {
+        elLoader.classList.remove("active");
+      }, 5000);
+    })
 
     elLoader.classList.add("active");
 
