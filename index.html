@@ -13,159 +13,115 @@
     <!-- SITE HEADER -->
     <header class="header">
         <div class="header__container container">
-            <a class="header__logo logo" href="index.html">
-                <img class="logo__img" src="./img/logo.svg" alt="fayZek_art logo" width="173" height="38">
+            <a class="header__link" href="#">
+                <img class="header__link-img" src="./img/instagram-icon.svg" alt="instagram-icon" width="32"
+                    height="32">
             </a>
-            <ul class="header__nav-list">
-                <li class="header__nav-item">
-                    <a class="header__nav-link" href="#">
-                        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
-                                fill="currentColor" />
-                        </svg>
-                    </a>
-                </li>
-                <li class="header__nav-item">
-                    <a class="header__nav-link" href="#">
-                        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M22.16 13.069a1.125 1.125 0 0 0-1.126-.282 7.883 7.883 0 0 1-9.822-9.825 1.125 1.125 0 0 0-1.406-1.407 10.206 10.206 0 0 0-5.148 3.608 10.125 10.125 0 0 0 8.092 16.212 10.04 10.04 0 0 0 6.087-2.033 10.206 10.206 0 0 0 3.604-5.151 1.126 1.126 0 0 0-.282-1.122Zm-4.677 4.475A7.876 7.876 0 0 1 6.455 6.517a7.96 7.96 0 0 1 2.195-1.99A10.136 10.136 0 0 0 19.473 15.35a7.952 7.952 0 0 1-1.99 2.194Z"
-                                fill="currentColor" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
         </div>
     </header>
 
     <!-- SITE MAIN -->
     <main class="main">
-        <div class="main__container container">
-            <h2 class="main__heading">Art gallery</h2>
-            <div class="gallery">
-                <div class="gallery__item">
-                    <a class="gallery__img-downloader" href="./img/photo_13_2024-03-25_23-47-50.jpg" download>
-                        download
-                        <span class="gallery__img-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
-                            </svg>
-                        </span>
-                    </a>
-                    <img class="gallery__img" src="./img/photo_13_2024-03-25_23-47-50.jpg">
+        <!-- SITE HERO -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__heading">
+                    WELCOME!
+                </h1>
+                <p class="hero__text"><span>fayZek_art</span> gallery</p>
+                <a class="hero__btn-link" href="#album">you can download here</a>
+            </div>
+            <div class="version">
+                version@1.0 (;
+            </div>
+        </section>
+        <section class="album" id="album">
+            <div class="album__header">
+                <h2 class="album__heading">Art gallery</h2>
+            </div>
+            <div class="album__images">
+                <div class="album__item">
+                    <a class="album__downloader" href="#">download <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
+                        </svg></a>
+                    <img class="album__img" src="./img/photo_13_2024-03-25_23-47-50.jpg">
                 </div>
-                <div class="gallery__item">
-                    <a class="gallery__img-downloader" href="./img/photo_2024-08-06_21-35-55.jpg" download>
-                        download
-                        <span class="gallery__img-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
-                            </svg>
-                        </span>
-                    </a>
-                    <img class="gallery__img" src="./img/photo_14_2024-03-25_23-47-50.jpg">
+
+                <div class="album__item">
+                    <a class="album__downloader" href="#">download <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
+                        </svg></a>
+                    <img class="album__img" src="./img/photo_14_2024-03-25_23-47-50.jpg">
                 </div>
-                <div class="gallery__item">
-                    <a class="gallery__img-downloader" href="./img/photo_2024-08-06_21-35-55.jpg" download>
-                        download
-                        <span class="gallery__img-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
-                            </svg>
-                        </span>
-                    </a>
-                    <img class="gallery__img" src="./img/photo_1_2024-03-26_00-05-02.jpg">
+
+                <div class="album__item">
+                    <a class="album__downloader" href="#">download <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
+                        </svg></a>
+                    <img class="album__img" src="./img/photo_1_2024-03-26_00-05-02.jpg">
                 </div>
-                <div class="gallery__item">
-                    <a class="gallery__img-downloader" href="./img/photo_2024-08-06_21-35-55.jpg" download>
-                        download
-                        <span class="gallery__img-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
-                            </svg>
-                        </span>
-                    </a>
-                    <img class="gallery__img" src="./img/photo_2_2024-03-25_23-47-50.jpg">
+
+                <div class="album__item">
+                    <a class="album__downloader" href="#">download <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
+                        </svg></a>
+                    <img class="album__img" src="./img/photo_2_2024-03-25_23-47-50.jpg">
                 </div>
-                <div class="gallery__item">
-                    <a class="gallery__img-downloader" href="./img/photo_2024-08-06_21-35-55.jpg" download>
-                        download
-                        <span class="gallery__img-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
-                            </svg>
-                        </span>
-                    </a>
-                    <img class="gallery__img" src="./img/photo_2_2024-03-26_00-05-02.jpg">
+
+                <div class="album__item">
+                    <a class="album__downloader" href="#">download <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
+                        </svg></a>
+                    <img class="album__img" src="./img/photo_2_2024-03-26_00-05-02.jpg">
                 </div>
-                <div class="gallery__item">
-                    <a class="gallery__img-downloader" href="./img/photo_2024-08-06_21-35-55.jpg" download>
-                        download
-                        <span class="gallery__img-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
-                            </svg>
-                        </span>
-                    </a>
-                    <img class="gallery__img" src="./img/photo_3_2024-03-25_23-47-50.jpg">
+
+                <div class="album__item">
+                    <a class="album__downloader" href="#">download <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
+                        </svg></a>
+                    <img class="album__img" src="./img/photo_3_2024-03-25_23-47-50.jpg">
                 </div>
-                <div class="gallery__item">
-                    <a class="gallery__img-downloader" href="./img/photo_2024-08-06_21-35-55.jpg" download>
-                        download
-                        <span class="gallery__img-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
-                            </svg>
-                        </span>
-                    </a>
-                    <img class="gallery__img" src="./img/photo_3_2024-03-26_00-05-02.jpg">
+
+                <div class="album__item">
+                    <a class="album__downloader" href="#">download <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
+                        </svg></a>
+                    <img class="album__img" src="./img/photo_3_2024-03-26_00-05-02.jpg">
                 </div>
-                <div class="gallery__item">
-                    <a class="gallery__img-downloader" href="./img/photo_2024-08-06_21-35-55.jpg" download>
-                        download
-                        <span class="gallery__img-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
-                            </svg>
-                        </span>
-                    </a>
-                    <img class="gallery__img" src="./img/photo_14_2024-03-25_23-47-50.jpg">
+
+                <div class="album__item">
+                    <a class="album__downloader" href="#">download <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
+                        </svg></a>
+                    <img class="album__img" src="./img/photo_3_2024-03-25_23-47-50.jpg">
                 </div>
-                <div class="gallery__item">
-                    <a class="gallery__img-downloader" href="./img/photo_2024-08-06_21-35-55.jpg" download>
-                        download
-                        <span class="gallery__img-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
-                            </svg>
-                        </span>
-                    </a>
-                    <img class="gallery__img" src="./img/photo_14_2024-03-25_23-47-50.jpg">
-                </div>
-                <div class="gallery__item">
-                    <a class="gallery__img-downloader" href="./img/photo_2024-08-06_21-35-55.jpg" download>
-                        download
-                        <span class="gallery__img-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
-                            </svg>
-                        </span>
-                    </a>
-                    <img class="gallery__img" src="./img/photo_2_2024-03-25_23-47-50.jpg">
+
+                <div class="album__item">
+                    <a class="album__downloader" href="#">download <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m12 16-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z" />
+                        </svg></a>
+                    <img class="album__img" src="./img/photo_3_2024-03-26_00-05-02.jpg">
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <script src="./js/script.js"></script>
