@@ -196,6 +196,8 @@ main {
 .album__images {
     columns: 2;
     column-gap: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .album__item {
@@ -220,7 +222,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    padding: 5px;
     background-color: var(--dark-jungle-green);
     color: var(--alabaster);
     z-index: 97;
@@ -276,5 +278,9 @@ main {
 @media only screen and (min-width: 567.98px) {
     .album__images {
         columns: 3;
+    }
+
+    .album__downloader {
+        padding: 8px;
     }
 }
